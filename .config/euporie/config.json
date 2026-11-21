@@ -1,0 +1,24 @@
+{
+  "color_scheme": "default",
+  "syntax_theme": "ansi_dark",
+  "edit_mode": "vi",
+  "show_status_bar": true,
+  "show_shadows": false,
+  "cursor_blink": false,
+  "notebook": {
+    "show_cell_borders": true,
+    "show_scroll_bar": true,
+    "show_side_bar": true,
+    "always_show_tab_bar": false,
+    "line_numbers": true,
+    "expand": true,
+    "autocomplete": true,
+    "autosuggest": false,
+    "autoinspect": false,
+    "autoformat": false,
+    "recent_files": [
+      "/home/luca/Projetos/calculoNumerico/unidade1/zprova/prova.ipynb"
+    ],
+    "color_scheme": "dark"
+  }
+}

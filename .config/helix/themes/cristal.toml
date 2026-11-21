@@ -1,0 +1,228 @@
+# ─────────────────────────────────────────────────────────────
+#  Ártico — variante clara ("água cristalina")
+#  Fundo branco suave e frio (sem branco puro), detalhes
+#  em azul-água esverdeado e no azul-marinho da variante escura.
+#  Coloque em ~/.config/helix/themes/artico_claro.toml
+# ─────────────────────────────────────────────────────────────
+
+# ── Sintaxe ──────────────────────────────────────────────────
+"attribute"                    = "sol"
+
+"type"                         = "agua_funda"
+"type.builtin"                 = "agua_funda"
+"type.parameter"               = "agua_media"
+"type.enum.variant"            = "orquidea"
+"constructor"                  = "agua_funda"
+
+"constant"                     = "orquidea"
+"constant.builtin"             = "orquidea"
+"constant.numeric"             = "orquidea"
+"constant.character"           = "verde"
+"constant.character.escape"    = "sol"
+
+"string"                       = "verde"
+"string.regexp"                = "sol"
+"string.special"               = "sol"
+"string.special.symbol"        = "orquidea"
+
+"comment"                      = { fg = "comentario", modifiers = ["italic"] }
+
+"variable"                     = "fg"
+"variable.builtin"             = "aurora"
+"variable.parameter"           = "aco_claro"
+"variable.other.member"        = "aco"
+
+"label"                        = "sol"
+
+"punctuation"                  = "pontuacao"
+"punctuation.delimiter"        = "pontuacao"
+"punctuation.bracket"          = "pontuacao"
+"punctuation.special"          = "aurora"
+
+"keyword"                      = "violeta"
+"keyword.directive"            = "aurora"
+"operator"                     = "operador"
+
+"function"                     = "azul"
+"function.builtin"             = "azul"
+"function.method"              = "azul"
+"function.macro"               = "aurora"
+"function.special"             = "aurora"
+
+"tag"                          = "aurora"
+"tag.builtin"                  = "aurora"
+"namespace"                    = "nevoa"
+"special"                      = "aurora"
+
+# ── Markup ───────────────────────────────────────────────────
+"markup.heading"               = "marinho"
+"markup.heading.marker"        = "comentario"
+"markup.heading.1"             = "marinho"
+"markup.heading.2"             = "agua_funda"
+"markup.heading.3"             = "azul"
+"markup.heading.4"             = "violeta"
+"markup.heading.5"             = "orquidea"
+"markup.heading.6"             = "verde"
+"markup.list"                  = "agua_funda"
+"markup.list.checked"          = "verde"
+"markup.list.unchecked"        = "apagado"
+"markup.bold"                  = { modifiers = ["bold"] }
+"markup.italic"                = { modifiers = ["italic"] }
+"markup.strikethrough"         = { modifiers = ["crossed_out"] }
+"markup.link.url"              = { fg = "agua_funda", underline = { style = "line" } }
+"markup.link.label"            = "azul"
+"markup.link.text"             = "azul"
+"markup.quote"                 = { fg = "apagado", modifiers = ["italic"] }
+"markup.raw"                   = "verde"
+"markup.normal"                = "fg"
+
+# ── Diff / VCS ───────────────────────────────────────────────
+"diff.plus"                    = "verde"
+"diff.minus"                   = "vermelho"
+"diff.delta"                   = "violeta"
+"diff.delta.moved"             = "agua_funda"
+"diff.delta.conflict"          = "ambar"
+"diff.plus.gutter"             = "verde_claro"
+"diff.minus.gutter"            = "vermelho_claro"
+"diff.delta.gutter"            = "violeta_claro"
+
+# ── Interface ────────────────────────────────────────────────
+"ui.background"                = { bg = "bg" }
+"ui.background.separator"      = "borda"
+
+"ui.text"                      = "fg"
+"ui.text.focus"                = { fg = "marinho", bg = "selecao" }
+"ui.text.inactive"             = "comentario"
+"ui.text.info"                 = "fg"
+"ui.text.directory"            = "agua_funda"
+
+# Cursor: destaque em água cristalina
+"ui.cursor"                    = { fg = "marinho", bg = "agua_clara" }
+"ui.cursor.primary"            = { fg = "bg", bg = "agua" }
+"ui.cursor.primary.insert"     = { fg = "bg", bg = "agua" }
+"ui.cursor.primary.select"     = { fg = "bg", bg = "marinho2" }
+"ui.cursor.match"              = { fg = "marinho", bg = "agua_clara" }
+
+"ui.selection"                 = { bg = "selecao" }
+"ui.selection.primary"         = { bg = "selecao_prim" }
+
+"ui.cursorline.primary"        = { bg = "bg1" }
+"ui.cursorline.secondary"      = { bg = "bg1" }
+"ui.cursorcolumn.primary"      = { bg = "bg1" }
+"ui.cursorcolumn.secondary"    = { bg = "bg1" }
+
+"ui.gutter"                    = { bg = "bg" }
+"ui.gutter.selected"           = { bg = "bg1" }
+"ui.linenr"                    = "borda_forte"
+"ui.linenr.selected"           = "agua_funda"
+
+# Barra de status no azul-marinho da variante escura
+"ui.statusline"                = { fg = "gelo", bg = "marinho" }
+"ui.statusline.inactive"       = { fg = "apagado", bg = "bg2" }
+"ui.statusline.normal"         = { fg = "marinho", bg = "agua_clara" }
+"ui.statusline.insert"         = { fg = "marinho", bg = "agua" }
+"ui.statusline.select"         = { fg = "gelo", bg = "violeta" }
+"ui.statusline.separator"      = "marinho2"
+
+"ui.bufferline"                = { fg = "apagado", bg = "bg2" }
+"ui.bufferline.active"         = { fg = "gelo", bg = "marinho" }
+"ui.bufferline.background"     = { bg = "bg2" }
+
+"ui.popup"                     = { fg = "fg", bg = "bg1" }
+"ui.popup.info"                = { fg = "fg", bg = "bg1" }
+"ui.help"                      = { fg = "fg", bg = "bg1" }
+"ui.window"                    = "borda"
+
+"ui.picker.header"             = { fg = "apagado", bg = "bg2" }
+"ui.picker.header.column"      = "apagado"
+"ui.picker.header.column.active" = { fg = "agua_funda", underline = { style = "line" } }
+
+"ui.menu"                      = { fg = "fg", bg = "bg1" }
+"ui.menu.selected"             = { fg = "marinho", bg = "agua_clara" }
+"ui.menu.scroll"               = { fg = "agua", bg = "bg2" }
+
+"ui.highlight"                 = { bg = "selecao" }
+"ui.highlight.frameline"       = { bg = "#f6ead2" }
+
+"ui.virtual.ruler"             = { bg = "bg1" }
+"ui.virtual.whitespace"        = "guia"
+"ui.virtual.indent-guide"      = "guia"
+"ui.virtual.inlay-hint"        = { fg = "comentario", bg = "bg1" }
+"ui.virtual.inlay-hint.parameter" = { fg = "comentario", bg = "bg1" }
+"ui.virtual.inlay-hint.type"   = { fg = "comentario", bg = "bg1" }
+"ui.virtual.wrap"              = "guia"
+"ui.virtual.jump-label"        = { fg = "aurora", modifiers = ["bold"] }
+
+"ui.debug.breakpoint"          = "vermelho"
+"ui.debug.active"              = "ambar"
+
+"markup.normal.completion"     = "fg"
+"markup.normal.hover"          = "fg"
+"markup.heading.completion"    = "marinho"
+"markup.heading.hover"         = "marinho"
+"markup.raw.inline.completion" = "verde"
+"markup.raw.inline.hover"      = "verde"
+
+# ── Diagnósticos ─────────────────────────────────────────────
+"error"                        = { fg = "vermelho", modifiers = ["bold"] }
+"warning"                      = "ambar"
+"info"                         = "azul"
+"hint"                         = "agua_funda"
+
+"diagnostic"                   = { underline = { style = "curl" } }
+"diagnostic.error"             = { underline = { color = "vermelho", style = "curl" }, modifiers = ["bold"] }
+"diagnostic.warning"           = { underline = { color = "ambar", style = "curl" } }
+"diagnostic.info"              = { underline = { color = "azul", style = "curl" } }
+"diagnostic.hint"              = { underline = { color = "agua_funda", style = "dotted" } }
+"diagnostic.unnecessary"       = { modifiers = ["dim"] }
+"diagnostic.deprecated"        = { modifiers = ["crossed_out"] }
+
+"tabstop"                      = { bg = "selecao_prim" }
+
+# ── Paleta ───────────────────────────────────────────────────
+[palette]
+# Fundos (branco frio, sem brilho agressivo)
+bg              = "#f2f5f6"
+bg1             = "#e9eef1"
+bg2             = "#dee6eb"
+borda           = "#c7d3dc"
+borda_forte     = "#a3b2c0"
+guia            = "#dbe3e9"
+selecao         = "#d6eeeb"
+selecao_prim    = "#b8e3dd"
+
+# Água cristalina (destaques)
+agua            = "#2fb3a9"
+agua_clara      = "#9fddd5"
+agua_media      = "#2a9d95"
+agua_funda      = "#0e7f78"   # tipos
+
+# Azul-marinho (herdado da variante escura)
+marinho         = "#0f1b2e"
+marinho2        = "#1b2c47"
+gelo            = "#d4e1ee"   # texto sobre o marinho
+
+# Neutros
+comentario      = "#8394a8"
+apagado         = "#5d6f86"
+fg              = "#22314a"
+
+# Sintaxe
+azul            = "#1d6bb8"   # funções
+violeta         = "#4a52c0"   # palavras-chave
+orquidea        = "#8a44a8"   # constantes / números
+verde           = "#3a7f4f"   # strings
+sol             = "#9a6814"   # escapes, regex, atributos
+aurora          = "#b93d63"   # builtins, macros, tags
+aco             = "#3b5b85"   # campos
+aco_claro       = "#4a6585"   # parâmetros
+nevoa           = "#5a5f9f"   # namespaces
+operador        = "#4b6788"
+pontuacao       = "#6b7c93"
+
+# Estados
+vermelho        = "#c8354a"
+ambar           = "#b5761a"
+verde_claro     = "#7fc093"
+vermelho_claro  = "#e08a96"
+violeta_claro   = "#9ea3e3"

@@ -1,0 +1,767 @@
+# esse backup não se atualiza sozinho, ele foi feito dia 21/11/26
+[accessibility]
+ui_scale = 0.90000000596046448
+
+[audio]
+enable_overdrive = true
+enable_sounds = false
+
+[bar]
+order = [ "default", "lyrics", "blocos" ]
+
+    [bar.blocos]
+    background_opacity = 0.0
+    capsule = true
+    capsule_border = "primary"
+    capsule_border_width = 2.5
+    capsule_opacity = 0.78999998234212399
+    capsule_padding = 9.0
+    capsule_radius = 8
+    capsule_thickness = 0.91999998316168785
+    compositor_blur = false
+    concave_edge_corners = false
+    contact_shadow = true
+    enabled = false
+    end = [ "lyrics_2", "media", "weather", "privacy", "tray", "group:g3" ]
+    font_scale = 0.98999998532235622
+    margin_edge = 7
+    margin_ends = 0
+    start = [ "workspaces", "active_window", "group:g1", "cat_2" ]
+
+        [[bar.blocos.capsule_group]]
+        accordion = true
+        accordion_direction = "end"
+        border = "tertiary"
+        border_width = 2.5
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "temp", "sysmon", "ram" ]
+        opacity = 0.78999996185302734
+        padding = 9.0
+        radius = 8.0
+
+        [[bar.blocos.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = "primary"
+        border_width = 2.5
+        enabled = true
+        fill = "surface_container"
+        id = "g3"
+        members = [ "status_2", "network", "battery" ]
+        opacity = 0.78999996185302734
+        padding = 9.0
+        radius = 8.0
+
+    [bar.default]
+    background_opacity = 0.73999998345971107
+    border = "primary"
+    border_width = 2.5
+    center = [ "weather", "clock" ]
+    end = [ "group:g1", "privacy", "status", "tray", "workspaces" ]
+    hover_highlight = false
+    margin_edge = 6
+    margin_ends = 400
+    padding = 9
+    start = [ "battery", "media" ]
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border_width = 0.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "cat", "cpu", "ram", "sysmon" ]
+        opacity = 0.0
+        padding = 0.0
+
+    [bar.lyrics]
+    auto_hide_delay_ms = 300
+    background_opacity = 0.72999998368322849
+    border = "secondary"
+    border_width = 2.5
+    center = [ "lyrics" ]
+    enabled = true
+    end = []
+    hover_highlight = false
+    margin_edge = 6
+    margin_ends = 400
+    padding = 11
+    radius = 13
+    reserve_space = false
+    show_on_workspace_switch = false
+    start = []
+
+[battery]
+warning_threshold = 30
+
+[brightness]
+scheduled_night_brightness = 0.0
+
+[calendar]
+enabled = true
+
+    [calendar.account.aniversarios]
+    name = "aniversários"
+    type = "google"
+
+    [calendar.account.faculdade]
+    name = "faculdade"
+    type = "google"
+
+    [calendar.account.pessoal]
+    name = "luca"
+    type = "google"
+
+[control_center]
+hidden_tabs = [ "monitor", "bluetooth" ]
+show_shortcut_labels = false
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "mic_mute"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "power_profile"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 400.0
+    box_width = 672.0
+    cx = 331.0
+    cy = 568.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = false
+        bands = 44
+        centered = false
+        mirrored = false
+        show_when_idle = false
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 400.0
+    box_width = 672.0
+    cx = 1035.0
+    cy = 568.0
+    flip_x = true
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = false
+        bands = 44
+        centered = false
+        mirrored = false
+        show_when_idle = false
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+pre_action_fade_seconds = 1
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[location]
+address = ""
+
+[lockscreen]
+dnd = true
+transition = [ "crt" ]
+transition_duration = 700
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-widget-0000000000000007",
+    "lockscreen-widget-0000000000000008",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000004",
+    "lockscreen-widget-0000000000000005",
+    "lockscreen-widget-0000000000000006",
+    "lockscreen-login-box@HDMI-A-1"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 8
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 768.0
+    cx = 400.0
+    cy = 418.0
+    output = "HDMI-A-1"
+    placement_height = 600.0
+    placement_width = 800.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_media_controls = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 150.0
+    box_width = 810.0
+    cx = 683.0
+    cy = 586.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.80000000000000004
+        background_radius = 17.0
+        center_password_text = true
+        input_opacity = 0.80000000000000004
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = false
+        show_keyboard_layout = false
+        show_login_button = false
+        show_media = true
+        show_media_controls = true
+        show_password_reveal = false
+        show_session_buttons = false
+        show_unlock_hint = false
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 360.0
+    box_width = 504.0
+    cx = 683.0
+    cy = 252.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "sticker"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        image_path = "/home/luca/Imagens/coisas importantes/fundo.png"
+        opacity = 0.95999999999999996
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 784.0
+    box_width = 1360.0
+    cx = 691.0
+    cy = 384.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "sticker"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = false
+        image_path = "/home/luca/Imagens/coisas importantes/fundo2.png"
+        opacity = 0.70000000000000007
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 360.0
+    box_width = 504.0
+    cx = 683.0
+    cy = 252.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = -0.2617993950843811
+    type = "sticker"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = false
+        image_path = "/home/luca/Imagens/coisas importantes/fundo.png"
+        opacity = 0.90000000000000002
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 184.0
+    box_width = 320.0
+    cx = 683.0
+    cy = 192.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
+        background = false
+        color = "on_surface_variant"
+        font_family = "Pomodoro"
+        shadow = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
+    box_height = 112.0
+    box_width = 152.0
+    cx = 591.0
+    cy = 320.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "volume"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
+        background = true
+        background_color = "#363636"
+        background_radius = 25
+        device = "output"
+        shadow = false
+        show_device = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
+    box_height = 112.0
+    box_width = 152.0
+    cx = 771.0
+    cy = 320.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "sysmon"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
+        background_color = "#363636"
+        background_radius = 25
+        stat = "cpu_usage"
+        stat2 = "cpu_temp"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000007]
+    box_height = 384.0
+    box_width = 624.0
+    cx = 307.0
+    cy = 576.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000007.settings]
+        background = false
+        bands = 32
+        centered = false
+        mirrored = false
+        show_when_idle = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000008]
+    box_height = 384.0
+    box_width = 624.0
+    cx = 1059.0
+    cy = 576.0
+    flip_x = true
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000008.settings]
+        background = false
+        bands = 32
+        centered = false
+        mirrored = false
+        show_when_idle = true
+
+[nightlight]
+enabled = true
+temperature_night = 4700
+
+[notification]
+background_opacity = 0.79999998211860657
+border_color = "tertiary"
+border_width = 3.5
+filter_order = [ "filter" ]
+history_retention_hours = 12
+newest_on_edge = true
+offset_x = 11
+offset_y = 11
+position = "bottom_right"
+show_actions = false
+show_app_name = false
+width = 400
+
+    [notification.filter.filter]
+    allow_permanent = true
+    bypass_dnd = false
+    enabled = true
+    match_content = ".*"
+    override_duration = 3000
+    play_sound = true
+    save_history = true
+    show_toast = true
+
+[osd]
+background_opacity = 0.79999998211860657
+border_color = "primary"
+border_width = 2.5
+offset_x = 11
+offset_y = 11
+position = "bottom_right"
+
+    [osd.kinds]
+    media = false
+
+[plugin_settings."ahmedhossamdev/sticky-notes"]
+panel_placement = "floating"
+
+[plugin_settings."ashur-d/wallpaper-widget"]
+close_on_apply = true
+hub_position = "auto"
+notify_on_change = false
+
+[plugin_settings."dotnetrob/cat"]
+panel_placement = "floating"
+
+[plugin_settings."h465855hgg/lyrics"]
+selector_placement = "floating"
+
+[plugin_settings."ishan0121/wallpaper-deck"]
+include_wallhaven_downloads = false
+panel_padding_offset = 19
+preview_fit = "contain"
+scan_subdirectories = false
+wallpaper_dir = "/home/luca/Imagens/wallpaper"
+
+[plugin_settings."nightwatch75/file-search"]
+panel_placement = "floating"
+
+[plugin_settings."vn1k/icons"]
+manager_placement = "floating"
+
+[plugins]
+enabled = [
+    "h465855hgg/lyrics",
+    "aristides/udiskie",
+    "dotnetrob/cat",
+    "ashur-d/wallpaper-widget",
+    "0b10headedcalf/obsidian-vault-switcher"
+]
+
+    [[plugins.source]]
+    kind = "git"
+    name = "official"
+
+    [[plugins.source]]
+    kind = "git"
+    name = "community"
+
+    [[plugins.source]]
+    enabled = false
+    kind = "path"
+    location = "/home/luca/.config/noctalia"
+    name = "plugins"
+
+[shell]
+app_icon_color = "primary"
+avatar_path = "/home/luca/Imagens/coisas importantes/perfil.jpg"
+circular_avatar = false
+font_family = "Noto Serif"
+lang = "en-GB"
+password_style = "random"
+polkit_agent = true
+screen_time_enabled = true
+settings_window_translucent = true
+show_close_buttons = false
+
+    [shell.animation]
+    speed = 1.5000000223517418
+
+    [shell.launcher]
+    category_icons_only = true
+    default_view = "all"
+    show_settings_button = false
+    width = 680
+
+        [shell.launcher.panels]
+        ignored = [
+            "polkit",
+            "setup-wizard",
+            "test",
+            "launcher",
+            "clipboard",
+            "wallpaper",
+            "dotnetrob/cat:panel",
+            "tray-drawer",
+            "session"
+        ]
+
+        [shell.launcher.providers.panels]
+        global = true
+
+        [shell.launcher.providers.session]
+        global = false
+
+    [shell.panel]
+    border_color = "primary"
+    border_width = 2.5
+    control_center_placement = "floating"
+    control_center_position = "center"
+    floating_offset = 11
+    polkit_position = "auto"
+    session_placement = "floating"
+    transparency_mode = "soft"
+    wallpaper_placement = "floating"
+    wallpaper_show_names = false
+
+    [shell.screenshot]
+    confirm_region = true
+    save_to_file = false
+    show_cursor = true
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "systemctl reboot --firmware-setup"
+    countdown_seconds = 0.0
+    enabled = true
+    label = "UEFI"
+    variant = "secondary"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+[theme]
+builtin = "Nord"
+community_palette = "Catppuccin Mocha Sapphire"
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "foot", "gtk3", "gtk4", "ghostty", "helix", "niri", "qt" ]
+    community_ids = [ "qutebrowser", "discord", "obsidian", "zed", "prismlauncher", "fastfetch", "superfile" ]
+
+        [theme.templates.user.obsidian1_extra]
+        input_path = "/home/luca/.config/noctalia/Obsidian/obsidian.css"
+        output_path = "/home/luca/Documentos/obsidian/obsidian/Occhiolism/.obsidian/snippets/noctalia.css"
+
+        [theme.templates.user.obsidian_extra]
+        input_path = "/home/luca/.config/noctalia/Obsidian/obsidian.css"
+        output_path = "/home/luca/Documentos/obsidian/obsidian/Vellichor/.obsidian/snippets/noctalia.css"
+
+        [theme.templates.user.terminal-sequences]
+        enabled = true
+        input_path = "~/.config/noctalia/templates/terminal-sequences"
+        output_path = "~/.cache/terminal-sequences"
+        post_hook = "tee /dev/pts/[0-9]* < ~/.cache/terminal-sequences > /dev/null"
+
+[wallpaper]
+directory = "/home/luca/Imagens/wallpaper"
+transition = [ "diamond", "disc", "golden", "honeycomb", "melt", "pixel", "stripes", "vortex", "wipe" ]
+
+    [wallpaper.automation]
+    enabled = true
+
+    [wallpaper.default]
+    path = "/home/luca/Imagens/wallpaper/miku.jpg"
+
+    [wallpaper.last]
+    path = "/home/luca/Imagens/wallpaper/factory.jpg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/luca/Imagens/wallpaper/frireren2.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/luca/Imagens/wallpaper/factory.jpg"
+
+[widget.active_window]
+capsule_border = "secondary"
+max_length = 213
+min_length = 0
+
+[widget.battery]
+color = "primary"
+display_mode = "graphic"
+hide_when_plugged = true
+show_label = false
+
+[widget.cat]
+cat_color = "on_surface_variant"
+cat_color_mode = "custom"
+cat_size = 29
+show_tooltip = false
+type = "dotnetrob/cat:cat"
+
+[widget.cat_2]
+capsule_border = "secondary"
+poll_interval = 1
+type = "dotnetrob/cat:cat"
+
+[widget.clock]
+color = "secondary"
+
+[widget.cpu]
+show_value = false
+
+[widget.lyrics]
+char_width = 14
+display_mode = "lyrics"
+double_line_auto_fit = true
+enable_scroll = false
+force_karaoke = true
+gradient = true
+hide_when_no_lyrics = false
+interactive = false
+karaoke_active_color = "#FFFFFF"
+max_chars = 39
+settings_page = "scroll"
+show_artist = false
+show_cover = false
+show_glyph = false
+show_romanization = true
+show_translation = true
+text_alignment = "center"
+type = "h465855hgg/lyrics:lyrics"
+
+[widget.lyrics_2]
+display_mode = "lyrics"
+enable_scroll = false
+enabled = false
+force_karaoke = true
+gradient = true
+selector_enabled = false
+settings_page = "appearance"
+text_alignment = "center"
+type = "h465855hgg/lyrics:lyrics"
+
+[widget.media]
+capsule_border = "secondary"
+color = "on_surface_variant"
+hide_artist = true
+hide_when_no_media = true
+max_length = 204
+min_length = 45
+
+    [widget.media.actions]
+    left = "exec noctalia msg bar-toggle lyrics"
+    middle = "media toggle"
+    right = "panel-toggle control-center media"
+
+[widget.network]
+show_label = false
+
+[widget.privacy]
+active_color = "#F10011"
+capsule_border = "tertiary"
+hide_inactive = true
+icon_spacing = 2
+
+[widget.ram]
+show_value = false
+
+[widget.status]
+hide_when_empty = true
+type = "aristides/udiskie:status"
+
+[widget.status_2]
+hide_when_empty = true
+type = "aristides/udiskie:status"
+
+[widget.sysmon]
+show_value = false
+
+[widget.taskbar]
+active_indicator_color = "tertiary"
+enabled = false
+
+[widget.temp]
+show_value = false
+
+[widget.tray]
+capsule_border = "secondary"
+
+[widget.weather]
+color = "primary"
+show_condition = false
+show_temperature = false
+
+[widget.workspaces]
+active_pill_size = 1.7000000000000002

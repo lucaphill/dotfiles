@@ -1,0 +1,6 @@
+# ~/.config/helix/themes/meu_tema.toml
+inherits = "base16_terminal"
+"ui.gutter" = { bg = "default" }
+"ui.gutter.selected" = { bg = "default" }
+"ui.linenr" = { fg = "gray", bg = "default" }
+"ui.linenr.selected" = { fg = "white", bg = "default", modifiers = ["bold"] }

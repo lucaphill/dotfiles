@@ -1,0 +1,77 @@
+
+//     █████╗ ███╗   ██╗██╗███╗   ███╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗
+//    ██╔══██╗████╗  ██║██║████╗ ████║██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+//    ███████║██╔██╗ ██║██║██╔████╔██║███████║   ██║   ██║██║   ██║██╔██╗ ██║███████╗
+//    ██╔══██║██║╚██╗██║██║██║╚██╔╝██║██╔══██║   ██║   ██║██║   ██║██║╚██╗██║╚════██║
+//    ██║  ██║██║ ╚████║██║██║ ╚═╝ ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║███████║
+//    ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+// from: https://github.com/deadduck-09/gigis-rice and https://github.com/jgarza9788/niri-animation-collection
+
+
+animations {
+  // Uncomment to turn off all animations.
+  //off
+  workspace-switch {
+    spring damping-ratio=0.75 stiffness=1600 epsilon=0.0001
+  }
+
+  window-open {
+    spring damping-ratio=0.6 stiffness=1000 epsilon=0.0003
+    //curve "ease-out-expo"
+  }
+
+	// Original by Lemmy: https://github.com/ItsLemmy
+	window-close {
+	    duration-ms 250
+	    curve "linear"
+	    custom-shader r"
+	    vec4 fall_and_rotate(vec3 coords_geo, vec3 size_geo) {
+	        float progress = niri_clamped_progress * niri_clamped_progress;
+	        vec2 coords = (coords_geo.xy - vec2(0.5, 1.0)) * size_geo.xy;
+	        coords.y -= progress * 1440.0;
+	        float random = (niri_random_seed - 0.5) / 2.0;
+	        random = sign(random) - random;
+	        float max_angle = 0.5 * random;
+	        float angle = progress * max_angle;
+	        mat2 rotate = mat2(cos(angle), -sin(angle), sin(angle), cos(angle));
+	        coords = rotate * coords;
+	        coords_geo = vec3(coords / size_geo.xy + vec2(0.5, 1.0), 1.0);
+	        vec3 coords_tex = niri_geo_to_tex * coords_geo;
+	        vec4 color = texture2D(niri_tex, coords_tex.st);
+	        color.a *= (1.0 - progress);
+
+	        return color;
+	    }
+	    vec4 close_color(vec3 coords_geo, vec3 size_geo) {
+	        return fall_and_rotate(coords_geo, size_geo);
+	    }
+	    "
+	}
+
+  horizontal-view-movement {
+    spring damping-ratio=0.75 stiffness=800 epsilon=0.0003
+  }
+
+  window-movement {
+    spring damping-ratio=0.6 stiffness=760 epsilon=0.0003
+  }
+
+  window-resize {
+    spring damping-ratio=0.45 stiffness=750 epsilon=0.0001
+  }
+
+  overview-open-close {
+    spring damping-ratio=0.60 stiffness=900 epsilon=0.001
+  }
+
+  recent-windows-close {
+    spring damping-ratio=0.40 stiffness=900 epsilon=0.001
+  }
+
+  screenshot-ui-open {
+    duration-ms 200
+    curve "ease-out-quad"
+  }
+  // Slow down all animations by this factor. Values below 1 speed them up instead
+  slowdown 1.1
+}

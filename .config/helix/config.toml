@@ -1,0 +1,69 @@
+theme = "noctalia"
+
+[editor]
+line-number = "relative"
+middle-click-paste = true
+cursorline = false
+continue-comments = true
+gutters = ["spacer", "line-numbers", "spacer", "diff"]
+auto-completion = true
+path-completion = true
+auto-format = false
+idle-timeout = 1000
+completion-timeout = 200
+preview-completion-insert = false
+completion-trigger-len = 2
+completion-replace = true
+auto-info = true
+true-color = true
+undercurl = true
+bufferline = "multiple"
+color-modes = true
+text-width = 90
+insert-final-newline = true
+atomic-save = true
+popup-border = "all"
+clipboard-provider = "wayland"
+end-of-line-diagnostics = "error"
+
+[editor.statusline]
+left = ["mode","spacer", "version-control","file-modification-indicator","spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
+
+[editor.whitespace.render]
+space = "all"
+tab   = "all"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "|"
+skip-levels = 0
+
+[editor.lsp]
+enable = true
+auto-signature-help = false
+display-inlay-hints = false
+display-signature-help-docs = false
+display-color-swatches = true
+snippets = true
+
+
+[editor.file-picker]
+hidden = true
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+prefix-len = 3
+
