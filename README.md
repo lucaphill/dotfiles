@@ -40,6 +40,7 @@ git restore . # restaura os arquivos do repositório, com isso atualizando nos l
 
 
 > Para fazer o foot reconhecer a troca de tema do noctalia
+> 
 >Para usar ele, precisaremos mexer em algumas coisas para o tema funcionar nele
 >1. Rode `bash` no terminal
 >2. Cole o seguinte comando para gerar um arquivo de mudança de cores
