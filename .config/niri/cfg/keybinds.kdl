@@ -10,7 +10,8 @@ binds {
 
     // ─── Applications ───
     Mod+Return                          hotkey-overlay-title="Open Terminal: foot"             { spawn "foot"; }
-    Mod+Shift+Return                    hotkey-overlay-title="Open Browser: zen"               { spawn "zen-browser"; }
+    Mod+Shift+Return                    hotkey-overlay-title="Open Terminal split down: foot"  { spawn-sh "foot & sleep 0.2 && niri msg action consume-or-expel-window-left"; }
+    Mod+O                               hotkey-overlay-title="Open Browser: zen"               { spawn "zen-browser"; }
     Mod+Shift+E                         hotkey-overlay-title="Open Text Editor: Zed"           { spawn "helix"; }
 
 
@@ -60,7 +61,6 @@ binds {
 
     Mod+Left                            { focus-column-left; }
     Mod+H                               { focus-column-left; }
-    Mod+A                               { focus-column-left; }
     Mod+Right                           { focus-column-right; }
     Mod+L                               { focus-column-right; }
     Mod+Up                              { focus-window-up; }
@@ -76,6 +76,9 @@ binds {
     Mod+CTRL+K                          { move-window-up; }
     Mod+CTRL+Down                       { move-window-down; }
     Mod+CTRL+J                          { move-window-down; }
+
+	Mod+TouchpadScrollRight             cooldown-ms=250 {move-column-left; }
+	Mod+TouchpadScrollLeft              cooldown-ms=250 {move-column-right; }
 
     Mod+Home                            { focus-column-first; }
     Mod+End                             { focus-column-last; }
@@ -98,7 +101,7 @@ binds {
     Mod+R                               { switch-preset-column-width; }
     Mod+Shift+F                         { set-window-width "50%"; }
 
-    Mod+Ctrl+Shift+R                    { switch-preset-window-height; }
+    Mod+Shift+R                         { switch-preset-window-height; }
     Mod+Ctrl+R                          { reset-window-height; }
 
     // ─── Workspace Switching ───
@@ -137,6 +140,9 @@ binds {
     Mod+CTRL+8                          { move-column-to-workspace 8; }
     Mod+CTRL+9                          { move-column-to-workspace 9; }
 
+	Mod+TouchpadScrollDown              cooldown-ms=250 {move-column-to-workspace-down; }
+	Mod+TouchpadScrollUp                cooldown-ms=250 {move-column-to-workspace-up; }
+	
     Mod+TAB                             { focus-workspace-previous; }
 
     // ─── Layout Controls ───
@@ -156,7 +162,7 @@ binds {
     Mod+M                               { maximize-window-to-edges; }
 
     // ─── Screenshots ───
-    //Print                               { screenshot; } // caso esteja usando so o niri
+    //Print                             { screenshot; } // caso esteja usando so o niri
     Print                               { spawn "noctalia" "msg" "screenshot-region"; }
     CTRL+Shift+2                        { screenshot-screen; }
     CTRL+Shift+3                        { screenshot-window; }
@@ -164,7 +170,7 @@ binds {
     // ─── Emergency Escape Key ───
     // Use this when a fullscreen app blocks your keybinds.
     // It disables any active keyboard shortcut inhibitor, restoring control.
-    Mod+ESCAPE allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    Mod+ESCAPE allow-inhibiting=false   { toggle-keyboard-shortcuts-inhibit; }
 
     // ─── Exit / Power ───
     CTRL+ALT+Delete                     { quit; }

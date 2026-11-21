@@ -5,7 +5,7 @@ line-number = "relative"
 middle-click-paste = true
 cursorline = false
 continue-comments = true
-gutters = ["spacer", "line-numbers", "spacer", "diff"]
+gutters = ["line-numbers", "spacer", "diff"]
 auto-completion = true
 path-completion = true
 auto-format = false
@@ -27,7 +27,7 @@ clipboard-provider = "wayland"
 end-of-line-diagnostics = "error"
 
 [editor.statusline]
-left = ["mode","spacer", "version-control","file-modification-indicator","spinner"]
+left = ["mode", "spacer", "version-control","file-modification-indicator","spinner"]
 center = ["file-name"]
 right = ["diagnostics", "selections", "position", "file-encoding", "file-type"]
 separator = "│"
