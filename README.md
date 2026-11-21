@@ -2,14 +2,17 @@
 
 Configurações montadas para usar o niri + noctalia, se não estiver usando algum desses algumas coisas serão diferentes
 
+Se fizer a cópia pelo stow, o ideal é fazer as edições na pasta dotfiles, não na pasta raiz
+
 ## Nota
 Se seu sistema não estiver em português, mude o nome da pasta Imagens para ficar igual a sua
 - Na pasta Imagens/coisas importantes: estão arquivos para usar em widgets do noctalia, como não podemos apagar/mover eles é bom ter um lugar fixo
 
-## Dependências
+## Dependências (caso for usar alguma dessas coisas)
 ```bash
 # fastfetch - baixe o pokemon colorscripts pelo yay ou pelo repositório deles
 yay -S pokemon-colorscripts-git
+
 # Para o euporie (jupyter notebook no terminal)
 sudo pacman -S uv # para gerenciar instalações python
 uv tool install euporie
@@ -28,11 +31,15 @@ stow .
 # se falar que tem algo duplicado, rode
 stown --adopt . 
 # basicamente um merge com prioridade para as suas configs de home/.config
+
+# quando tiver importando para o seu sistema, depois de clonar já dentro da pasta use
+stow --adopt . # cria os links mesmo que alguns tirem os arquivos do repositório
+git restore . # restaura os arquivos do repositório, com isso atualizando nos links também
 ```
 
 
 
-> [!quote]- Foot
+> Para fazer o foot reconhecer a troca de tema do noctalia
 >Para usar ele, precisaremos mexer em algumas coisas para o tema funcionar nele
 >1. Rode `bash` no terminal
 >2. Cole o seguinte comando para gerar um arquivo de mudança de cores
