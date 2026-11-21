@@ -25,6 +25,7 @@ binds {
     Mod+S                               hotkey-overlay-title="Open control center"             { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Shift+B                         hotkey-overlay-title="Open Lyrics selector"            { spawn-sh "noctalia msg panel-toggle h465855hgg/lyrics:selector"; }
     XF86WebCam                          hotkey-overlay-title="Toggle lyrics bar"               { spawn-sh "noctalia msg bar-toggle lyrics"; } // firt download the lyrics plugin
+    Mod+B                               hotkey-overlay-title="Toggle lyrics bar"               { spawn-sh "noctalia msg bar-toggle lyrics"; } // firt download the lyrics plugin
     Mod+Shift+S                         hotkey-overlay-title="Toggle desktop widgets"          { spawn-sh "noctalia msg desktop-widgets-toggle"; }
 
     // ─── Session ───
