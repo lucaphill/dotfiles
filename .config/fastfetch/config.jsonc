@@ -61,7 +61,7 @@
             "key": "{#34}󰉉 {#keys}",
             "type": "disk",
             "folders": "/",
-            "format": "{size-used} / {size-total} [{size-percentage}]"
+            "format": "{size-used} / {size-total} [{size-percentage}]",
         },
         {
             "key": "{#36}󰍛 {#keys}",

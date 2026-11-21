@@ -1,4 +1,19 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
+function fish_greeting
+    if test (tput lines) -gt 25
+        fastfetch
+    end
+end
+set -g shell_start (date +%s)
+
+function clear_on_small --on-signal WINCH
+    if test (math (date +%s) - $shell_start) -le 1
+        if test (tput lines) -le 25
+            clear
+            commandline -f repaint
+        end
+    end
+end
 
 set -gx EDITOR helix
 set -gx VISUAL helix

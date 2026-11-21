@@ -45,18 +45,6 @@ window-rule {
     default-window-height { fixed 270; }
 }
 
-// submodulos do zen para coisas especificas
-// -- zen --
-window-rule {
-    match app-id="zen" title="(?i)^(meet|whatsapp)"
-    block-out-from "screen-capture"
-}
-window-rule {
-    match app-id="zen" title="(?i)^($docs.google.com/spreadsheets$)"
-    block-out-from "screen-capture"
-}
-
-
 // -- gnome calculator --
 window-rule {
     match app-id="org.gnome.Calculator" title="^Calculadora$"
@@ -71,15 +59,16 @@ window-rule {
     open-maximized true
 }
 
-// -- proton pass --
-window-rule {
-    match app-id="proton-pass"
-    block-out-from "screen-capture"
-}
 // -- blender --
 window-rule {
     match app-id="blender"
    	open-maximized true
+}
+
+// foot split
+window-rule {
+    match app-id=r#"^foot-split-"#
+    open-focused false
 }
 // ============================================================
 // screencast
@@ -98,6 +87,21 @@ window-rule {
         active-color "#871e1d"
         inactive-color "#871e1d"
     }
+}
+
+// -- proton pass --
+window-rule {
+    match app-id="proton-pass"
+    block-out-from "screen-capture"
+}
+// -- zen --
+window-rule {
+    match app-id="zen" title="(?i)^(meet|whatsapp|gmail)"
+    block-out-from "screen-capture"
+}
+window-rule {
+    match app-id="zen" title="(?i)^($docs.google.com/spreadsheets$)"
+    block-out-from "screen-capture"
 }
 
 // ============================================================

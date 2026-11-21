@@ -21,7 +21,11 @@ layout {
         inactive-color "#00000000" // NULL
     }
     focus-ring {
+        //off
    	    width 2.5
-    	//off
+    }
+
+    tab-indicator {
+        gaps-between-tabs 8
     }
 }
