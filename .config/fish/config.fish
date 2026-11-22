@@ -1,11 +1,18 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 set -g shell_start (date +%s)
 function clear_on_small --on-signal WINCH
-    if test (math (date +%s) - $shell_start) -le 1
+    if test (math (date +%s) - $shell_start) -le 3
         if test (tput lines) -le 25
             clear
             commandline -f repaint
         end
+    end
+end
+
+function clear_first_prompt --on-event fish_prompt
+    functions -e clear_first_prompt
+    if test (tput lines) -le 25
+        clear
     end
 end
 
