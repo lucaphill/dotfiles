@@ -178,6 +178,7 @@ zoxide_support = true
 # Example:
 [open_with]
   pdf = "zathura"
-  png = "mpv Media Player"
-  jpeg = "mpv"
-  webp = "mpv"
+  png = "imv"
+  jpeg = "imv"
+  webp = "imv"
+  mp4 = "mpv"
