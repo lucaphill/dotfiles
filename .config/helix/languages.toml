@@ -77,10 +77,12 @@ language-servers = [ "scls", "ty", "ruff", "jedi", "pylsp", "zuban" ]
 name = "zig"
 language-servers = [ "scls", "zls" ]
 
-
-
-
-
+[[language]]
+name = "markdown"
+soft-wrap.enable = true
+# text-width = 80 < this is the default
+soft-wrap.wrap-at-text-width = true
+language-servers = ["markdown-oxide"]
 # etc..
 
 # introduce a new language to enable completion on any doc by forcing set language with :set-language stub
