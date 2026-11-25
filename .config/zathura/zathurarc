@@ -1,0 +1,6 @@
+map ge goto bottom
+map gg goto top
+map gh goto top
+map gl goto bottom
+map <C-d> scroll half-down
+map <C-u> scroll half-up
