@@ -1,3 +1,6 @@
+// Esse arquivo controla o que vai ser ativado / desativado quando quiser poupar bateria
+// Algumas das janelas precisam ser reiniciadas para pegar os efeitos da mudança (tipo o foot)
+
 animations {
 	off
 }
@@ -11,8 +14,6 @@ blur {
 }
 
 window-rule{
-	geometry-corner-radius 0
-	clip-to-geometry true
 	background-effect {
 		blur false
 		xray true
