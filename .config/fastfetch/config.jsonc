@@ -42,6 +42,11 @@
             "type": "os"
         },
         {
+            "key": "{#32}󰢮 {#keys}",
+            "type": "cpu",
+            "format": "{name} @ {freq-max}"
+        },
+        {
             "key": "{#34}󰅐 {#keys}",
             "type": "uptime"
         },
