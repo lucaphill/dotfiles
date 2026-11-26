@@ -7,6 +7,7 @@ Se fizer a cópia pelo stow, o ideal é fazer as edições na pasta dotfiles, n�
 ## Nota
 Se seu sistema não estiver em português, mude o nome da pasta Imagens para ficar igual a sua
 - Na pasta Imagens/coisas importantes: estão arquivos para usar em widgets do noctalia, como não podemos apagar/mover eles é bom ter um lugar fixo
+- **CUIDADO** a função `baterry` precisa que vc deixe as linhas que serão alteradas no fim do arquivo e que o nome do arquivo bata exatamente com o nome do seu arquivo
 
 ## Dependências (caso for usar alguma dessas coisas)
 ```bash
