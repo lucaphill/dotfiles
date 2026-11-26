@@ -17,8 +17,5 @@ window-rule{
 		blur false
 		xray true
 	}
-}
-window-rule {
-	math app-id=""
-	opacity 1
+	opacity 0.99
 }

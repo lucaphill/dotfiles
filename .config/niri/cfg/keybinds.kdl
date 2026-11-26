@@ -11,7 +11,7 @@ binds {
     // ─── Applications ───
     Mod+Return                          hotkey-overlay-title="Open Terminal: foot"             { spawn "foot"; }
     Mod+Shift+Return                    hotkey-overlay-title="Open Terminal split down: foot"  { spawn-sh "sh $HOME/.config/niri/foot-split.sh"; }
-    Mod+O                               hotkey-overlay-title="Open Browser: zen"               { spawn "zen-browser"; }
+    Mod+I                               hotkey-overlay-title="Open Browser: zen"               { spawn "zen-browser"; }
     Mod+Shift+E                         hotkey-overlay-title="Open Text Editor: Zed"           { spawn "helix"; }
 
 
@@ -39,7 +39,7 @@ binds {
     ALT+Shift+tab                                                                              { spawn-sh "noctalia msg window-switcher"; }
 	Mod+Shift+C                         hotkey-overlay-title="Pick Color"                      { spawn-sh "niri msg pick-color | grep -o '#[0-9a-fA-F]\\{6\\}' | wl-copy"; }
 	Mod+D                                                                                      { spawn-sh "fish -c define";}
-	
+    Mod+O                                                                                      { spawn-sh "fish -c baterry"; }
     // Please choose your own file manager.
     Mod+E                               hotkey-overlay-title="File Manager: super file"        { spawn-sh "foot -e spf" ; }
 
