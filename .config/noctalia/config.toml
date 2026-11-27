@@ -1,8 +1,2 @@
 [shell]
 polkit_agent = true
-
-[theme.templates.user.terminal-sequences]
-enabled = true
-input_path = '~/.config/noctalia/templates/terminal-sequences'
-output_path = '~/.cache/terminal-sequences'
-post_hook = 'tee /dev/pts/[0-9]* < ~/.cache/terminal-sequences > /dev/null'

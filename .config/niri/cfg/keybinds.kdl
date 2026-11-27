@@ -9,8 +9,8 @@ binds {
     Mod+Shift+ESCAPE                    { show-hotkey-overlay; }
 
     // ─── Applications ───
-    Mod+Return                          hotkey-overlay-title="Open Terminal: foot"             { spawn "foot"; }
-    Mod+Shift+Return                    hotkey-overlay-title="Open Terminal split down: foot"  { spawn-sh "sh $HOME/.config/niri/foot-split.sh"; }
+    Mod+Return                          hotkey-overlay-title="Open Terminal: ghostty"          { spawn "ghostty"; }
+    Mod+Shift+Return                    hotkey-overlay-title="Open Terminal split down"        { spawn-sh "sh $HOME/.config/niri/term-split.sh"; }
     Mod+I                               hotkey-overlay-title="Open Browser: zen"               { spawn "zen-browser"; }
     Mod+Shift+E                         hotkey-overlay-title="Open Text Editor: Zed"           { spawn "helix"; }
 
