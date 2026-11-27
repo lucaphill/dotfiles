@@ -11,11 +11,9 @@
 <!-- STATISTCS -->
 <div align="center"> 
    
-   ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/osmarmora05/.dotfiles?style=for-the-badge&labelColor=%23252733&color=%23cba6f7)
-   ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/osmarmora05/.dotfiles?style=for-the-badge&labelColor=%23252733&color=%23a6e3a1)
-   ![GitHub Repo stars](https://img.shields.io/github/stars/osmarmora05/.dotfiles?style=for-the-badge&labelColor=%23252733&color=%23f5c2e7)
-   ![GitHub issues](https://img.shields.io/github/issues/osmarmora05/.dotfiles?style=for-the-badge&labelColor=%23252733&color=%2399d1db)
-
+   ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/lucaphill/.dotfiles?style=for-the-badge&labelColor=%23252733&color=%23cba6f7)
+   ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lucaphill/.dotfiles?style=for-the-badge&labelColor=%23252733&color=%23a6e3a1)
+   ![GitHub Repo stars](https://img.shields.io/github/stars/lucaphill/.dotfiles?style=for-the-badge&labelColor=%23252733&color=%23f5c2e7)
 </div>
 
 > [!Important]
