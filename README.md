@@ -38,10 +38,12 @@ stow --adopt . # cria os links mesmo que alguns tirem os arquivos do repositóri
 git restore . # restaura os arquivos do repositório, com isso atualizando nos links também
 ```
 
+## Trocando de terminal
+Se vc quiser trocar de terminal tem dois lugares que precisam ser alterados
+1. Primeiramente em ".config/niri/term-split.sh" vc tem que colocar o nome do seu terminal.
 
 
-> ## Config para o foot reconhecer a troca de tema do noctalia
-> 
+> ### Config para o foot reconhecer a troca de tema do noctalia > 
 >Para usar ele, precisaremos mexer em algumas coisas para o tema funcionar nele
 >1. Rode `bash` no terminal
 >2. Cole o seguinte comando para gerar um arquivo de mudança de cores

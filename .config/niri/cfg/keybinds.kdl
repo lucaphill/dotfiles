@@ -41,7 +41,7 @@ binds {
 	Mod+D                                                                                      { spawn-sh "fish -c define";}
     Mod+O                                                                                      { spawn-sh "fish -c baterry"; }
     // Please choose your own file manager.
-    Mod+E                               hotkey-overlay-title="File Manager: super file"        { spawn-sh "foot -e spf" ; }
+    Mod+E                               hotkey-overlay-title="File Manager: super file"        { spawn-sh "ghostty -e spf" ; }
 
     // ─── Media Controls ───
     XF86AudioRaiseVolume                allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }

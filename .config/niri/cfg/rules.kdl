@@ -65,9 +65,9 @@ window-rule {
    	open-maximized true
 }
 
-// foot split
+// term split
 window-rule {
-    match app-id=r#"^foot-split-"#
+    match app-id=r#"^dev\.termsplit\."#
     open-focused false
 }
 // ============================================================
