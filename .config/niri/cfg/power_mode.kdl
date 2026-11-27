@@ -1,21 +1,3 @@
 animations {
 	off
 }
-layout {
-	shadow {
-		off
-	}
-}
-blur {
-	off
-}
-
-window-rule{
-	geometry-corner-radius 0
-	clip-to-geometry true
-	background-effect {
-		blur false
-		xray true
-	}
-	opacity 0.99
-}
