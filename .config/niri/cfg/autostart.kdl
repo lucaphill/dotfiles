@@ -2,3 +2,4 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
 spawn-at-startup "noctalia"
+spawn-sh-at-startup "until noctalia msg bar-show niri 2>/dev/null; do sleep 0.05; done; noctalia msg bar-hide lyrics"

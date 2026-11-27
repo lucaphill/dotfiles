@@ -8,6 +8,7 @@ input {
             // uncomment the line below and change the layout accordingly.
             layout "br"
             variant "abnt2"
+            options "caps:swapescape"
         }
         numlock // Enable numlock on startup
     }

@@ -97,11 +97,11 @@ window-rule {
 // -- zen --
 window-rule {
     match app-id="zen" title="(?i)^(meet|whatsapp|gmail)"
-    block-out-from "screen-capture"
+    block-out-from "screencast"
 }
 window-rule {
     match app-id="zen" title="(?i)^($docs.google.com/spreadsheets$)"
-    block-out-from "screen-capture"
+    block-out-from "screencast"
 }
 
 // ============================================================
