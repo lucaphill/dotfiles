@@ -31,7 +31,7 @@
 > [!Note]
 > Provavelmente algumas coisas não vão funcionar de cara por vc precisar mudar os caminhos dos arquivos, também não vem nada visual do noctalia configurado por padrão
 >
-> Se for usar o stow para gerenciar seus arquivos, quando for editar algo, edite em `dotfiles` e não na sua `.config`.
+> Se for usar o stow para gerenciar seus arquivos, quando for editar algo, edite em `dotfiles` e não na sua `.config`. Se não souber como mexer nele, [indico esse vídeo](https://youtu.be/y6XCebnB9gs?si=RepS9maknOtyPqCF)
 >
 > Sempre que criar um **arquivo novo**, rode `stow .` na pasta dotfiles (lembre de fazer backup antes)
 
@@ -56,17 +56,15 @@ Primeiramente, instale o [CachyOS](https://cachyos.org/), com o niri!
 Após a instalação certifique-se que tem o git instalado e logado em uma conta
 ```bash
 # clone o repositório
-mkdir dotfiles # cria uma pasta nova no seu sistema
-cd dotfiles # entra nela
 git clone git@github.com:lucaphill/dotfiles.git
-# depois disso, entre no diretório criado e rode o stown
-cd dotfiles
-stow . 
-# se falar que tem algo duplicado, rode
-stown --adopt . 
-# basicamente um merge com prioridade para as suas configs de home/.config
 
-# quando tiver importando para o seu sistema, depois de clonar já dentro da pasta use
+mkdir dotfiles # cria uma pasta nova no seu sistema
+# depois disso, entre no diretório criado, copie os arquivos do clone do github e rode o stown
+cd dotfiles
+# Se não quiser montar um repositório do git para sua contif (não recomendo), apague os arquivos do `.config` que tão duplicados e no mesmo terminal que já tava na pasta rode
+stown . 
+
+# Recomendado, criar um repositório seu com esses arquivos na pasta e depois rodar isso
 stow --adopt . # cria os links mesmo que alguns tirem os arquivos do repositório
 git restore . # restaura os arquivos do repositório, com isso atualizando nos links também
 ```
