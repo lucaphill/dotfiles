@@ -1,6 +1,6 @@
 #!/bin/sh
 # Terminal a usar. Pode ser sobrescrito: TERM_CMD=foot ./term-split.sh
-TERM_CMD="${TERM_CMD:-ghostty}"
+TERM_CMD="${TERM_CMD:-foot}"
 
 tag="dev.termsplit.t$$"
 

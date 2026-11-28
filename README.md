@@ -68,3 +68,44 @@ stown .
 stow --adopt . # cria os links mesmo que alguns tirem os arquivos do repositório
 git restore . # restaura os arquivos do repositório, com isso atualizando nos links também
 ```
+
+> #### Usar o foot
+> **Por que usar?** ele é mais leve e tem melhor suporte para o helix
+>
+>Para usar ele, precisaremos mexer em algumas coisas para o tema funcionar nele
+>1. Rode `bash` no terminal
+>2. Cole o seguinte comando para gerar um arquivo de mudança de cores
+>```bash
+>#!/usr/bin/env bash
+>T=~/.config/noctalia/templates/terminal-sequences
+>mkdir -p ~/.config/noctalia/templates
+>names=(black red green yellow blue magenta cyan white)
+>{
+>  printf '\033]10;{{colors.terminal_foreground.default.hex}}\007'
+>  printf '\033]11;{{colors.terminal_background.default.hex}}\007'
+>  for i in {0..7}; do
+>    printf '\033]4;%d;{{colors.terminal_normal_%s.default.hex}}\007' "$i" "${names[$i]}"
+>    printf '\033]4;%d;{{colors.terminal_bright_%s.default.hex}}\007' "$((i+8))" "${names[$i]}"
+>  done
+>  printf '\033]19;{{colors.terminal_selection_fg.default.hex}}\007'
+>  printf '\033]17;{{colors.terminal_selection_bg.default.hex}}\007'
+>  printf '\033]12;{{colors.terminal_cursor.default.hex}}\007'
+>} > "$T"
+>```
+>3. confira se o arquivo foi gerado com:
+>`cat -v ~/.config/noctalia/templates/terminal-sequences`
+>4. Avise o noctalia que agora tem um arquivo novo para atualizar
+>```toml
+># ~/.config/noctalia/config.toml
+>[theme.templates.user.terminal-sequences]
+>input_path = '~/.config/noctalia/templates/terminal-sequences'
+>output_path = '~/.cache/terminal-sequences'
+>post_hook = 'tee /dev/pts/[0-9]* < ~/.cache/terminal-sequences > /dev/null'
+>```
+>### Se quiser desativar
+>```bash
+># remova o bloco do passo 2
+>rm ~/.config/noctalia/templates/terminal-sequences ~/.cache/terminal-sequences
+># tire oq colocamos na config do noctalia no passo 4
+>```
+>

@@ -17,32 +17,32 @@ code_syntax_highlight = "catppuccin"
 ###############################################################################
 
 #-- Full Screen
-full_screen_fg = "#e4e1ef"
-full_screen_bg = "#13121c"
+full_screen_fg = "#e6e0ed"
+full_screen_bg = "#14121b"
 
 #-- Gradient (two-color)
-gradient_color = ["#c2c1ff", "#ffa9ff"]
-directory_icon_color = "#c2c1ff"
+gradient_color = ["#ccbeff", "#ffaceb"]
+directory_icon_color = "#ccbeff"
 
 #-- File Panel
-file_panel_fg = "#e4e1ef"
-file_panel_bg = "#13121c"
-file_panel_border = "#918fa2"
-file_panel_border_active = "#c2c1ff"
-file_panel_top_directory_icon = "#c2c1ff"
-file_panel_top_path = "#c2c1ff"
+file_panel_fg = "#e6e0ed"
+file_panel_bg = "#14121b"
+file_panel_border = "#938ea1"
+file_panel_border_active = "#ccbeff"
+file_panel_top_directory_icon = "#ccbeff"
+file_panel_top_path = "#ccbeff"
 # Selection distinguishes the foreground only, keeping the surface uniform
 # with the regular row. Mirrors the upstream catppuccin-mocha theme, where
 # `file_panel_item_selected_fg` differs from `file_panel_fg` while sharing
 # the same background — a subtler highlight than changing the row surface.
-file_panel_item_selected_fg = "#c2c1ff"
-file_panel_item_selected_bg = "#13121c"
+file_panel_item_selected_fg = "#ccbeff"
+file_panel_item_selected_bg = "#14121b"
 
 #-- Footer
-footer_fg = "#c7c4d9"
-footer_bg = "#13121c"
-footer_border = "#918fa2"
-footer_border_active = "#c2c1ff"
+footer_fg = "#cac3d7"
+footer_bg = "#14121b"
+footer_border = "#938ea1"
+footer_border_active = "#ccbeff"
 
 #-- Sidebar
 # Same background as file_panel and footer (uniform panel surface). Visual
@@ -51,31 +51,31 @@ footer_border_active = "#c2c1ff"
 # foreground while keeping the surface uniform with the rest of the row,
 # mirroring the file-panel selection style and the upstream catppuccin-mocha
 # convention (distinguish fg only).
-sidebar_fg = "#e4e1ef"
-sidebar_bg = "#13121c"
-sidebar_title = "#c2c1ff"
-sidebar_border = "#918fa2"
-sidebar_border_active = "#ffa9ff"
-sidebar_item_selected_fg = "#c2c1ff"
-sidebar_item_selected_bg = "#13121c"
-sidebar_divider = "#464556"
+sidebar_fg = "#e6e0ed"
+sidebar_bg = "#14121b"
+sidebar_title = "#ccbeff"
+sidebar_border = "#938ea1"
+sidebar_border_active = "#ffaceb"
+sidebar_item_selected_fg = "#ccbeff"
+sidebar_item_selected_bg = "#14121b"
+sidebar_divider = "#484455"
 
 #-- Modals
-modal_fg = "#e4e1ef"
-modal_bg = "#13121c"
-modal_border_active = "#c2c1ff"
+modal_fg = "#e6e0ed"
+modal_bg = "#14121b"
+modal_border_active = "#ccbeff"
 modal_cancel_fg = "#ffdad6"
 modal_cancel_bg = "#93000a"
-modal_confirm_fg = "#1b00a6"
-modal_confirm_bg = "#c2c1ff"
+modal_confirm_fg = "#350097"
+modal_confirm_bg = "#ccbeff"
 
 #-- Help Menu
-help_menu_hotkey = "#ffa9ff"
-help_menu_title = "#c2c1ff"
+help_menu_hotkey = "#ffaceb"
+help_menu_title = "#ccbeff"
 
 #-- Special
-cursor = "#c2c1ff"
-correct = "#ffa9ff"
+cursor = "#ccbeff"
+correct = "#ffaceb"
 error = "#ffb4ab"
-hint = "#c2c1ff"
+hint = "#ccbeff"
 cancel = "#93000a"
