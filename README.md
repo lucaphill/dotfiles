@@ -38,7 +38,7 @@
 ## Dependências (caso for usar alguma dessas coisas)
 ```bash
 # Se quiser importar mais fácil a configuração, use o stow
-sudo pacman -S stown
+sudo pacman -S stow
 # fastfetch - baixe o pokemon colorscripts pelo yay ou pelo repositório deles
 yay -S pokemon-colorscripts-git
 # terminal - isso é completamente opicional, mas no meu caso estou usando o ghostty
@@ -69,7 +69,7 @@ stow --adopt . # cria os links mesmo que alguns tirem os arquivos do repositóri
 git restore . # restaura os arquivos do repositório, com isso atualizando nos links também
 ```
 
-> #### Usar o foot
+> ### Usar o foot
 > **Por que usar?** ele é mais leve e tem melhor suporte para o helix
 >
 >Para usar ele, precisaremos mexer em algumas coisas para o tema funcionar nele
