@@ -69,8 +69,16 @@ stow --adopt . # cria os links mesmo que alguns tirem os arquivos do repositóri
 git restore . # restaura os arquivos do repositório, com isso atualizando nos links também
 ```
 
-> ### Usar o foot
-> **Por que usar?** ele é mais leve e tem melhor suporte para o helix
+> ### Configurações especificas
+> No meu caso, o cpufreq é o único jeito de mudar o modo de energia,então tem um atalho para isso.
+>
+> Para ele funcionar vc precisa desativar a necessidade de senha para o cpufreq
+>```bash
+>echo "$USER ALL=(ALL) NOPASSWD: /usr/bin/cpupower" | sudo tee /etc/sudoers.d/cpupower
+>sudo chmod 440 /etc/sudoers.d/cpupower
+>```
+>
+> #### Usando o foot como terminal
 >
 >Para usar ele, precisaremos mexer em algumas coisas para o tema funcionar nele
 >1. Rode `bash` no terminal

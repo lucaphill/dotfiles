@@ -3,12 +3,15 @@ function cpu-cycle
     switch $current
         case schedutil
             sudo cpupower frequency-set -g performance &>/dev/null
-            notify-send -a "CPU" -i speedtest "Modo Performance" "Governor: performance"
+            notify-send -u normal "CPU: Performance" "Governor: performance"
+            echo "CPU: performance"
         case performance
             sudo cpupower frequency-set -g powersave &>/dev/null
-            notify-send -a "CPU" -i battery-level-20-symbolic "Modo Economia" "Governor: powersave"
+            notify-send -u low "CPU: Economia" "Governor: powersave"
+            echo "CPU: powersave"
         case '*'
             sudo cpupower frequency-set -g schedutil &>/dev/null
-            notify-send -a "CPU" -i battery-good-symbolic "Modo Equilibrado" "Governor: schedutil"
+            notify-send -u low "CPU: Equilibrado" "Governor: schedutil"
+            echo "CPU: schedutil"
     end
 end
