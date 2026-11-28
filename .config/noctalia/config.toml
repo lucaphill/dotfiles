@@ -6,3 +6,7 @@ polkit_agent = true
 input_path = '~/.config/noctalia/templates/terminal-sequences'
 output_path = '~/.cache/terminal-sequences'
 post_hook = 'tee /dev/pts/[0-9]* < ~/.cache/terminal-sequences > /dev/null'
+
+[theme.templates.user.niri_border]
+input_path  = "$XDG_CONFIG_HOME/noctalia/templates/niri-border.kdl"
+output_path = "$XDG_CONFIG_HOME/niri/border.kdl"

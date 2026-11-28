@@ -1,0 +1,10 @@
+layout {
+    border {
+        active-color "{{ colors.outline_variant.default.hex }}"
+        inactive-color "{{ colors.surface_container_high.default.hex }}"
+    }
+    focus-ring {
+        active-color "{{ colors.outline_variant.default.hex }}"
+        inactive-color "{{ colors.surface_container_high.default.hex }}"
+    }
+}

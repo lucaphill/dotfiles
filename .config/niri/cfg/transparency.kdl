@@ -10,7 +10,9 @@ window-rule {
     }
 }
 */
-
+window-rule {
+    // opacity 0.85
+}
 // -- nautilus --
 window-rule {
     match app-id="^org.gnome.Nautilus"
@@ -55,10 +57,10 @@ window-rule {
     draw-border-with-background false
 }
 
-/* -- zen --
-window-rule {
-    match app-id="zen"
-	//opacity 0.95
-    draw-border-with-background false
-}
-*/
+//  // -- zen --
+// window-rule {
+//     match app-id="zen"
+// 	opacity 0.95
+//     draw-border-with-background false
+// }
+
